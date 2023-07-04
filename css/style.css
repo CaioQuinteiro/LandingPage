@@ -28,6 +28,10 @@ body {
     height: 72px;
 }
 
+.cabecalho-imagem::selection {
+    background-color: #ECD6C4;
+}
+
 .cabecalho-menu {
     display: flex;
     gap: 32px;
@@ -38,6 +42,16 @@ body {
     color: #FFF2E7;
     font-weight: 400;
     font-size: 18px;
+}
+
+.cabecalho-menu-item:hover {
+    color: #c5bab1;
+    transition: 0.2s;
+}
+
+.cabecalho-menu-item::selection {
+    color: black;
+    background-color: #ECD6C4;
 }
 
 /* ---- MAIN ---- */
@@ -67,6 +81,11 @@ body {
     color: #FFF2E7;
 }
 
+.conteudo-principal-escrito-titulo::selection, .conteudo-principal-escrito-subtitulo::selection {
+    color: black;
+    background-color: #ECD6C4;
+}
+
 .conteudo-principal-escrito-subtitulo {
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
@@ -87,8 +106,22 @@ body {
     color: #2F2325;
 }
 
+.conteudo-principal-escrito-botao::selection {
+    background-color: #FFF2E7;
+}
+
+.conteudo-principal-escrito-botao:hover {
+    cursor: pointer;
+    background-color: #ae9f92;;
+    transition: 0.2s;
+}
+
 .conteudo-principal-imagem {
     height: 430px;
+}
+
+.conteudo-principal-imagem::selection {
+    background-color: #ECD6C4;
 }
 
 .conteudo-secundario {
@@ -109,6 +142,11 @@ body {
     margin-bottom: 16px;
 }
 
+.conteudo-secundario-titulo::selection, .conteudo-secundario-paragrafo::selection, strong::selection {
+    color: black;
+    background-color: #ECD6C4;
+}
+
 .conteudo-secundario-paragrafo {
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
@@ -127,4 +165,8 @@ body {
     height: 48px;
     display: block;
     margin: 0 auto;
+}
+
+.rodape-imagem::selection {
+    background-color: #ECD6C4;
 }
